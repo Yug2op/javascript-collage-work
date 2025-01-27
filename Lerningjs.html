@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        body {
+            background-color: blue;
+            color: rgb(17, 186, 126);
+        }
+
+        .container {
+            background-color: yellow;
+        }
+
+        h1 {
+            color: pink;
+            background-color: rgb(136, 192, 52);
+        }
+
+        footer {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quia earum rem fuga odit culpa laudantium
+            dolorum sequi nulla velit repudiandae officiis eligendi voluptatum cupiditate assumenda nemo, amet non,
+            natus aliquid ea placea libero impedit facere! Eaque amet debitis dolorem, assumenda labore
+            molestiae fuga provident alias impedit obcaecati quasi laborum in aut quos nobis velit ducimus non quidem
+            iusto quibusdam. Explicabo numquam itaque iusto neque totam dolor suscipit iste molestiae consequatur
+            aliquam! Deserunt nihil, iusto voluptas corporis consectetur quos quis doloremque obcaecati omnis ullam
+            eveniet unde. Totam odio blanditiis ex optio ad! Deserunt, voluptatum et. Commodi, consectetur repellendus!
+            Officia eligendi architecto, provident quidem minima in ullam ea similique nam enim ut eveniet hic nulla
+            illo corporis repellendus molestias autem voluptatibus ratione odit, quia totam eos tenetur. Blanditiis unde
+            quos, in perspiciatis, dolores impedit, porro error laudantium nobis voluptatum quam rem maiores.
+            Consequatur labore repellendus quibusdam enim deleniti quaerat corporis cupiditate mollitia vitae aliquid
+            distinctio saepe ea aspernatur repellat officiis sapiente eos laboriosam doloribus assumenda ad
+            necessitatibus, incidunt sed magnam minima! Recusandae, officia, dolor nulla provident necessitatibus quis
+            fugiat eos sunt a maiores delectus aliquid expedita est voluptas ullam, earum dolores. Temporibus
+            doloremque, possimus aut sed autem, culpa soluta aliquid fugiat est beatae quas fuga repellat, deleniti
+            numquam unde mollitia. Possimus quas saepe recusandae iste sed nemo magnam expedita.</p>
+    </div>
+    <footer>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus tempora itaque quam neque aliquam maxime
+        explicabo cupiditate distinctio inventore, necessitatibus voluptates ad officiis cumque accusamus eius ex
+        pariatur ut maiores debitis quidem obcaecati assumenda, molestiae earum veniam. Odio, dolor ab non iusto enim
+        sequi vitae excepturi voluptatibus beatae illo doloribus nesciunt odit iure animi provident veniam voluptas
+        corrupti repellendus quia aspernatur a. Sequi error iure eius? Obcaecati itaque optio explicabo tempora eius
+        vitae, minima voluptatem dolor dolore est quia quaerat fugit libero laborum voluptates nemo qui earum corporis
+        asperiores doloribus at beatae pariatur. Magnam consequatur provident quo aliquid, distinctio a.</footer>
+    <script>
+        let t = maleFriends = ["Aman", "Afzal", "Akash", "Gautam", "Aarav", "Ayush", "Shivam", "Ashutosh", "Aryan"]
+        let j = femaleFriends = ["Riya", "Vaishali", "Arushi", "Anjali", "Arpita", "Silvi", "Ayushi", "Anika"]
+        let f = fakeFriends = [
+            { Name: "Harsh Singh", age: 15 },
+
+            { Name: "Nikhil Sahu", age: 15 },
+
+            { Name: "Kishan Jaiswal", age: 15 },
+        ];
+        t.forEach(function (v, index) {
+            console.log(index + ":" + v + "<br>")
+        })
+        let n = NothingWithiThem = ["Gulsan", "Akash"]
+        console.log("My Male Friends are ");
+        for (let i = 0; i < maleFriends.length; i++) {
+            console.log(i, maleFriends[i])
+        }
+        console.log("And my female Friends are ");
+        femaleFriends.forEach((element, i) => {
+
+            console.log(i, element);
+        });
+        for (const abc in fakeFriends) {
+            console.log(`My fake Friend ${abc} is : ${fakeFriends[abc]}`);
+        }
+        for (const xyz of NothingWithiThem) {
+            console.log("This person doesn`t mean to me any thing: " + xyz);
+        }
+        let a = prompt("What is your name???");
+        document.getElementsByClassName("container").innerHTML="How are you";
+        if (a > 100) {
+            for (let q = 0; q < fakeFriends.length; q++) {
+                console.log("fuck you!!" + fakeFriends[q].Name + " <br>");;
+                
+            }
+            
+
+        }
+
+        else if (a < 100) {
+            console.log("Hello sir!!");
+        }
+
+        else {
+            console.log("I love you <3 " + femaleFriends) ;
+        }
+        let ffff = document.querySelector(".container").innerHTML;
+
+    </script>
+</body>
+
+</html>

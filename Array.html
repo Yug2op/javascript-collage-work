@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<script>
+// 1D array
+document.write("<ul>")
+    
+    let a=[1,2,3,4,5,6,7,8,9,10]
+    for (let ab = 0; ab <=a.length; ab++) {
+        document.write("<li>")
+        document.write(ab + "<br>")
+      
+    }
+   
+    
+    document.write("</ul>")
+    document.write("<br>")
+    //OR can be written as
+    let b =new Array()
+    b[0]="aman"
+    b[1]="ayush"
+    b[2]="riyaa"
+    b[3]="achankha"
+    b[4]="riya"
+    b[5]="riyaa"
+    
+    for (let d = 0; d < b.length; d++) {
+        document.write(b[d] +" ")
+        document.write(d  + "<br>")
+        
+    }
+    
+    // Multidimensional array
+    document.write("<br>")
+    let y = new Array()
+    y = [
+        [10,20,30,40],
+        [50,60,70,80],
+        [90,23,45,67]
+    ]
+    for (let z = 0; z < y.length; z++) {
+        for (let x = 0; x < y[z].length; x++) {
+            document.write(y[z][x] + " " )
+            
+        }
+        document.write("<br>")
+        
+    }
+    var n= b.indexOf("riyaa",3)
+    document.write(n +" <br>")
+
+    var n= b.lastIndexOf("riyaa",3)
+    document.write(n)
+</script>
+<body>
+</body>
+</html>

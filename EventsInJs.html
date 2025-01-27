@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaSript</title>
+    <style>
+        img {
+            height: 100px;
+            width: 100px;
+
+            &:hover {
+                height: 105px;
+                width: 105px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Events</h2>
+    <ul id="main">
+        <li id="image1"><img src="../Netflix-Clone/Netflix-img/bg-cover.jpg"></img></li>
+        <li id="image2"><img src="../Netflix-Clone/Netflix-img/feature-1.png"></img></li>
+        <li id="image3"><img src="../Netflix-Clone/Netflix-img/feature-2.png"></img></li>
+        <li id="image4"><img src="../Netflix-Clone/Netflix-img/feature-3.png"></img></li>
+        <li id="google"><a href="http://www.google.co.in">Google</a></li>
+    </ul>
+    <script>
+        // document.getElementById("image1").onclick = function(){
+        //     alert('hello')
+        // }
+
+        // document.getElementById('image1').addEventListener('dblclick',function(){
+        //     alert('Image1 is double clicked')
+        // },false)
+        // -------------------------event propogation -------------------------------
+        // capturing = true- it goes from top to bottom eg. here it goes from ul to li.
+        // bubbling = false- it goes from bottom to top eg. here it goes from li to ul.
+        // document.getElementById('image1').addEventListener('click', function (e) {
+        //     alert('Image1 is clicked')
+            
+        // },true)
+
+        // document.getElementById('main').addEventListener('click', function (e) {
+        //     alert('ul is clicked')
+        //     // e.stopPropagation(); // it will stop propogation.
+        // })
+        // document.getElementById("google").addEventListener('click',function(e){
+        //     alert('google is clicked')
+        //     e.preventDefault();     //it will stop the default action.
+        //     e.stopPropagation();
+        // })
+
+        document.getElementById('main').addEventListener('click',function(e){
+            // alert('Hello');
+            if(e.target.tagName==='IMG'){
+                let removeIt = e.target.parentNode;
+                removeIt.remove()
+            }
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

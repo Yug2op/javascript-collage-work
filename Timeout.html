@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout Function</title>
+    <link rel="stylesheet" href="../Bootstrap tutorial/bootstrap.css">
+</head>
+<body>
+    <h2>Hello Everyone I`m Yugank Tripathi</h2>
+    <button class="stop">No Bold</button>
+</body>
+<script>
+    const bolder = function () {
+        document.querySelector('h2').innerHTML="<h2>Hello Everyone I`m <b>Yugank Tripathi</b></h2>";
+    }
+    const hii = setTimeout(bolder, 2000)
+    document.querySelector('.stop').addEventListener('click',function() {
+        clearTimeout(hii);
+        console.log('hello');
+    })
+</script>
+</html>

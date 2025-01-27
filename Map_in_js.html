@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps in Js</title>
+    <script>
+        let arrobj= [
+            {fName: "Aman" , lName: "Jaiswal" },
+            {fName: "Ayush" , lName: "Singh" },
+            {fName: "Riya" , lName: "Yadav" },
+            {fName: "Akansha" , lName: "Gupta" },
+        ];
+        let cm = arrobj.map( check)
+        document.write(cm)
+        function check (oi){
+            return  oi.fName +" "+ oi.lName
+        }
+        document.write("<br>" + "<br>")
+        let arr = [11,12,13,14,15,16]
+        let c = arr.map( checks)
+        document.write(c)
+        function checks (d){
+            return d * 4 
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <H1>Hello</H1>
+</body>
+</html>

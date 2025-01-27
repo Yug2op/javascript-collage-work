@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+    <style>
+        body {
+            background-color: rgb(26, 27, 28);
+            text-align: center;
+            color: rgb(121, 198, 220);
+            font-size: 26px;
+            margin-top: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function Person(fname, age, lname, designation) {
+            this.firstname = fname;
+            this.age = age;
+            this.lastname = lname;
+            this.designation = designation;
+        }
+        const myself = new Person("Yugank", 23, "Tripathi", "Developer");
+        const myFather = new Person("Vinay", 50, "Tripathi", "Farmer");
+        const myMother = new Person("Neelam", 47, "Tripathi", "Housewife");
+        const mySister = new Person("Arpita", 21, "Tripathi", "Student");
+        const myBrother = new Person("Prakhar", 18, "Tripathi", "Student");
+
+        document.write("I`m " + myself.firstname + " " + myself.lastname + " " + myself.age + " years old." + " I am a " + myself.designation);
+        document.write("<br>");
+        document.write("<br>");
+        document.write(myFather.firstname + " " + myFather.lastname + " is my father and his age is " + myFather.age + " years old." + " He is a " + myFather.designation);
+        document.write("<br>");
+        document.write("<br>");
+        document.write(myMother.firstname + " " + myMother.lastname + " is my mother and her age is " + myMother.age + " years old." + " She is a " + myMother.designation);
+        document.write("<br>");
+        document.write("<br>");
+        document.write(mySister.firstname + " " + mySister.lastname + " is my sister and her age is " + mySister.age + " years old." + " She is a " + mySister.designation);
+        document.write("<br>");
+        document.write("<br>");
+        document.write(myBrother.firstname + " " + myBrother.lastname + " is my brother and his age is" + myBrother.age + " years old." + " He is a " + myBrother.designation);
+
+        
+        const family = [myself, myFather, myMother, mySister, myBrother];
+        const adults = family.filter(member => member.age >= 25);
+        const AdultMembers = adults.map(member => member.firstname + " " + member.lastname);
+        console.log(AdultMembers);
+
+        const Adult = prompt("Ask Question: How many adults are there in my family?");
+        if (Adult == "How many adults are there in my family?") {
+            alert(`Number of adults in my family:  ${ adults.length } and their names are: \n ${ AdultMembers.join("\n") } `);
+        } else {
+            alert("Please copy the question and paste in the prompt to get the Answer.");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+    <script>
+        let string = "we are more Than this is not His jiskaijjll";
+        let a = string.length;
+        document.write(a + "<br>")
+        let b = string.toLowerCase();
+        document.write(b + "<br>")
+        let c = string.toUpperCase();
+        document.write(c + "<br>")
+        // to search any word from string we use includes() function , 
+        // It is case sensitive ,,,Returns True or False
+        let d = string.includes("is")
+        document.write(d + "<br>")
+        // startsWith() search word of the string that starts with The given letter or word
+        let e = string.startsWith("w")
+        document.write(e + "<br>")
+        // endsWith() search word of the string that ends with The given letter or word
+        let f = string.endsWith("jjll")
+        document.write(f + "<br>")
+        // search() to search any word 
+        // match()  to search any word (/searching words/g)
+        // replace() to replace ant word in place of some word (/replaceable words/g, " replacing word ")
+        let g = string.replace(/is/g,"iss" ) // all is will be replaced by iss...
+        document.write(g + "<br>")
+        //  trim is used to cut whitespaces 
+        // charAt is use to know the word at given index...
+        // repeat() is used to repeat string the given time
+        let h = string.repeat(3)
+        document.write(h + "<br>")
+        
+
+
+
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore itaque debitis corrupti velit ducimus facilis
+        alias sapiente dolor. Incidunt, vero. Eligendi ratione hic explicabo provident.</p>
+</body>
+
+</html>
