@@ -45,7 +45,7 @@
         document.write("<br>");
         document.write(myBrother.firstname + " " + myBrother.lastname + " is my brother and his age is" + myBrother.age + " years old." + " He is a " + myBrother.designation);
 
-        
+
         const family = [myself, myFather, myMother, mySister, myBrother];
         const adults = family.filter(member => member.age >= 25);
         const AdultMembers = adults.map(member => member.firstname + " " + member.lastname);
@@ -53,7 +53,7 @@
 
         const Adult = prompt("Ask Question: How many adults are there in my family?");
         if (Adult == "How many adults are there in my family?") {
-            alert(`Number of adults in my family:  ${ adults.length } and their names are: \n ${ AdultMembers.join("\n") } `);
+            alert(`Number of adults in my family:  ${adults.length} and their names are: \n ${AdultMembers.join("\n")} `);
         } else {
             alert("Please copy the question and paste in the prompt to get the Answer.");
         }
