@@ -54,4 +54,10 @@ function emp1(id,name,salary){
             document.write(e.id+" "+e.name+" "+e.salary);
             e.changeSalary(45000);
             document.write("<br>"+e.id+" "+e.name+" "+e.salary);
-        }
+        } 
+
+        // Que6 
+
+        //Que6 
+    
+      
