@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListner</title>
+</head>
+
+<body>
+    <p>This is example of adding multiple events to the same element</p>
+    <p>click the following button to see the effect.</p>
+    <button id="btn">Click Me</button>
+    <p id="para"></p>
+    <p id="para1"></p>
+
+    <script>
+        function fun() {
+            alert("Welcome to ADYPU");
+        }
+        function fun2() {
+            document.getElementById("para").innerHTML = "This is secoand function.";
+        }
+        function fun3() {
+            document.getElementById("para1").innerHTML = "This is third function.";
+
+        }
+        var mybtn = document.getElementById("btn");
+        mybtn.addEventListener("click", fun)
+        mybtn.addEventListener("click", fun2)
+        mybtn.addEventListener("click", fun3)
+
+    </script>
+</body>
+</html>

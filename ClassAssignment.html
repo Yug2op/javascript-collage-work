@@ -1,0 +1,84 @@
+<!-- print personal detail urn sem courses name college etc. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <style>
+        img{
+            height: 150px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .inner{
+            display: flex;
+        }
+        .align{
+            margin: 20px;
+        }
+        button{
+            height: 20px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/Yugank Image.jpg" alt="My Photo">
+    <div class="container">
+        <div class="inner">
+            <h3 id="name">Name:</h3>
+            <p class="align" id="displayName"></p>
+            <button id="btn">See my Name</button>
+        </div>
+        <div class="inner">
+            <h3 id="course">Course:</h3>
+            <p class="align" id="displayCourse"></p>
+            <button id="btn">See my Course</button>
+        </div>
+        <div class="inner">
+            <h3 id="college">College:</h3>
+            <p class="align" id="displayCollege"></p>
+            <button id="btn">See my College</button>
+        </div>
+        <div class="inner">
+            <h3 id="URN">URN:</h3>
+            <p class="align" id="displayURN"></p>
+            <button id="btn">See my URN</button>
+        </div>
+        <div class="inner">
+            <h3 id="program">Program:</h3>
+            <p class="align" id="displayProgram"></p>
+            <button id="btn">See my Program</button>
+        </div>
+    </div>
+
+    <script>
+    function name(){
+        document.getElementById("displayName").innerHTML="Yugank Tripathi"
+    }
+        document.getElementById("btn").addEventListener("click",name)
+    function course(){
+        document.getElementById("displayCourse").innerHTML="<li>hello</li>"
+    }
+        document.getElementById("btn").addEventListener("click",course)
+    function college(){
+        document.getElementById("displayCollege").innerHTML="Yugank Tripathi"
+    }
+        document.getElementById("btn").addEventListener("click",college)
+    function urn(){
+        document.getElementById("displayURN").innerHTML="Yugank Tripathi"
+    }
+        document.getElementById("btn").addEventListener("click",urn)
+    function program(){
+        document.getElementById("displayProgram").innerHTML="Yugank Tripathi"
+    }
+        document.getElementById("btn").addEventListener("click",program)
+    </script>
+
+
+</body>
+</html>

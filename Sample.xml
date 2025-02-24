@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" herf="style.xsl"?>
+<students>
+    <student>
+        <name>Yugank Tripathi</name>
+        <age>22</age>
+        <course>Computer Science</course>
+    </student>
+    <student>
+        <name>Aman jaiswal</name>
+        <age>23</age>
+        <course>Computer Science</course>
+    </student>
+</students>
